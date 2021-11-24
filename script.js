@@ -38,6 +38,7 @@ function singleRound(playerSelection, computerSelection){
 //console.log(singleRound('Paper','Scissors'));
 //Function for checking player input
 function checkInput(str){
+    
     let incomeString=str;
     //incomeString.trim();
     //console.log()
@@ -76,7 +77,7 @@ function endGame(){
 }
 //Game process
 function gaming() {
-   while (computerScore<5 && playerScore!==5){
+   while (computerScore<5 && playerScore<5){
     singleRound(playerPlay(),computerPlay());
     keepScore();
     }
