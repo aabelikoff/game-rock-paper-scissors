@@ -20,7 +20,6 @@ function singleRound(playerSelection, computerSelection){
              (playerSelection==='Paper' && computerSelection==='Rock') ||
              (playerSelection==='Scissors' && computerSelection==='Paper')){
                 roundResult='You win';
-                
                 playerScore++;
              }
     else {
@@ -66,16 +65,16 @@ function endGame(){
 }
 
 function gaming() {
-   while (computerScore<5 && playerScore<5){
-    singleRound(playerPlay(),computerPlay());
-    keepScore();
+    while (computerScore<5 && playerScore<5){
+        singleRound(playerPlay(),computerPlay());
+        keepScore();
     }
     endGame();
 }
 
 function keepScore(){
     let resultString=`Your score: ${playerScore}  Computer score: ${computerScore}`;
-   console.log(resultString);
+    console.log(resultString);
 }
 
 gaming();
