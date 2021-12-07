@@ -4,12 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <link rel="stylesheet" href="style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic'
+    rel='stylesheet' type='text/css'>
     <title>Game</title>
 </head>
 <body>
-    <h1>Welcome to our game!!!</h1>
-    <div class="greeting"><button></button></div>
+    <h1>Rock, Paper, Scissors game</h1>
+    <div class="content">
+        <div class="selecting">
+            <h2>Select item</h2>
+            <div class="items">
+                <button id='rock'></button>
+                <button id='paper'></button>
+                <button id='scissors'></button>
+            </div>
+        </div>
+        <div class='info'>
+            <h2>Round number<span id='countR'></span></h2>
+            <div class=choice>
+                <div class="pChoice"><p></p>
+                    <div class="pChoicePic hide"></div>
+                </div>
+                <div class="result"></div>
+                <div class="cChoice"><p></p>
+                    <div class="cChoicePic hide"></div>
+                </div>
+            </div>
+           
+            <div class="score">
+                <h2>Total score:</h2>
+                <div></div>
+            </div>
+        </div>
+
+
+    </div>
     <script src="script.js">
     </script>
 
